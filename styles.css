@@ -80,6 +80,24 @@ main {
     background-color: #011627;
 }
 
+ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #codeOrg {
+    display: block;
+    margin-left: 2em;
+  }
+
+  #codeOrg::before {
+    color: #1a8dcc;
+    display: inline-block;
+    content: counter(item) " ";
+    counter-increment: item;
+    width: 2em;
+    margin-left: -2em;
+  }
 a:link {
     color: #a7dbf7;
   }
@@ -107,10 +125,3 @@ footer {
     padding: 1rem 0;
 }
 
-/* Basic responsive adjustments */
-/* @media (max-width: 768px) {
-    nav li {
-        display: block; /* Stack navigation on smaller screens */
-        margin: 0.5rem 0;
-    }
-}  */
