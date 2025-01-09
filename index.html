@@ -12,22 +12,18 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">aboutMe.txt</a></li>
-                <li><a href="#projects">projects.zip</a></li>
-                <li><a href="#contact">connect.txt</a></li>
-                <li><a href="#contact">resume.pdf</a></li>
-
-                <li><a href="./pages/about.html" class="navbar__links">aboutMe.txt</a></li>
-                <li><a href="./pages/projects.html" class="navbar__links">projects.zip</a></li>
-                <li><a href="./pages/contact.html" class="navbar__links">connect.txt</a></li>
-                <li><a href="./pages/resume.html" class="navbar__links">resume.pdf</a></li>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#about" data-page="about" class="nav-link active">aboutMe.txt</a></li>
+                <li><a href="#projects" data-page="projects" class="nav-link">projects.zip</a></li>
+                <li><a href="#contact" data-page="contact" class="nav-link">connect.txt</a></li>
+                <li><a href="#resume" data-page="resume" class="nav-link">resume.pdf</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero">
+        <!-- About Section -->
+        <section id="about" class="page active">
             <img src="./images/profPic.jpg" alt="Profile">
             <p>1 Thanh To 
                 <br>2 
@@ -37,17 +33,19 @@
                 <br>6 experience at Panasonic Avionics Corporation and my involvement in various student 
                 <br>7 organizations demonstrate my ability to collaborate effectively, problem-solve, and 
                 <br>8 take initiative. My technical expertise, coupled with my leadership and 
-                <br>9 interpersonal skills, make me a valuable asset to any team.</p>
-            <button>View My Work</button>
+                <br>9 interpersonal skills, make me a valuable asset to any team.
+                <br>10
+                <br>11
+                <br>12 connect with me
+                <br>13 
+                <br>14 <a href="www.linkedin.com/in/tthanhhto">LinkedIn: www.linkedin.com/in/tthanhhto</a>
+                <br> 15 <a href="mailto:tthanhh.to@gmail.com">Email: tthanhh.to@gmail.com</a>
+                <br>16 <a href="https://github.com/tthanhh-to">GitHub: https://github.com/tthanhh-to</a>
+            </p>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself, your skills, and your experience.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
+        <section id="projects" class="page">
+            <h1>Projects</h1>
             <div class="project-grid">
                 <div class="project">
                     <img src="placeholder.jpg" alt="Project 1">
@@ -64,7 +62,17 @@
                 </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="page">
+            <h2>Contact</h2>
+            <p>Your contact information or a contact form can go here.</p>
+            <ul>
+                <li>Email: your.email@example.com</li>
+                <li>LinkedIn: linkedin.com/in/yourprofile</li>
+                <li>GitHub: github.com/yourusername</li>
+            </ul>
+        </section>
+
+        <section id="resume" class="page">
             <h2>Contact</h2>
             <p>Your contact information or a contact form can go here.</p>
             <ul>
@@ -78,7 +86,7 @@
     <footer>
         <p>&copy; 2025 Thanh To</p>
     </footer>
-    <script src="script.ts"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 <!DOCTYPE html>

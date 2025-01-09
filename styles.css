@@ -38,7 +38,8 @@ img {
 body {
     font-family: "Space Mono";
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 15px;
     color: #a7dbf7;
 }
 
@@ -73,10 +74,19 @@ section {
     margin-bottom: 2rem;
 }
 
-#hero {
+main {
     text-align: left;
     padding: 10px;
     background-color: #011627;
+}
+
+a:link {
+    color: #a7dbf7;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #a7dbf7;
 }
 
 .project-grid {
@@ -98,9 +108,9 @@ footer {
 }
 
 /* Basic responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     nav li {
         display: block; /* Stack navigation on smaller screens */
         margin: 0.5rem 0;
     }
-} 
+}  */
