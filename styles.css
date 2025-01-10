@@ -1,7 +1,7 @@
 CSS
 
 /* styles.css */
-
+/* font */
 .space-mono-regular {
     font-family: "Space Mono", serif;
     font-weight: 400;
@@ -26,15 +26,7 @@ CSS
     font-style: italic;
 }
 
-img {
-    float: right;
-    height: 15%;
-    width: 15%;
-    border-radius: 100%;
-    border: 3px solid;
-    border-color: #fff;
-}
-
+/* all page attributes */
 body {
     font-family: "Space Mono";
     margin: 0;
@@ -42,12 +34,13 @@ body {
     font-size: 15px;
     color: #a7dbf7;
 }
-
+/* nav */
 header {
+    width: 100%;
     background-color: #010e1a;
     padding: 1rem 0;
+    position: fixed;
 }
-
 
 nav ul {
     list-style: none;
@@ -66,18 +59,26 @@ nav a {
     color: #a7dbf7;
 }
 
-/* main {
-    padding: 2rem;
-} */
-
-section {
-    margin-bottom: 2rem;
-}
-
 main {
     text-align: left;
     padding: 10px;
     background-color: #011627;
+}
+
+/* each page setting */
+section {
+    padding: 40xpx 0;
+    margin-bottom: 2rem;
+}
+
+/* profile photo */
+img {
+    float: inline-end;
+    height: 20%;
+    width: 20%;
+    border-radius: 100%;
+    border: 3px solid;
+    border-color: #fff;
 }
 
 ol {
