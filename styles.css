@@ -68,11 +68,13 @@ main {
     text-align: left;
     padding: 10px;
     background-color: #011627;
+    min-height: 100%;
 }
 
 /* each page setting */
 section {
-    margin-top:4%
+    margin-top: 4%;
+    height: 90vh;
 }
 .page {
     position: absolute; /* Remove from document flow */
@@ -125,7 +127,6 @@ a:link {
     color: #a7dbf7;
     text-decoration: none;
   }
-  
   /* visited link */
   a:visited {
     color: #a7dbf7;
@@ -143,12 +144,13 @@ a:link {
 }
 #pdf{
     text-align: center;
-    padding-top: 1%;
+    padding-top: 1px;
 }
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    height: 5%;
-    padding: 1rem 0;
+    position: relative;
+    bottom: 0px;
+    padding: 1vh;
 }
