@@ -154,12 +154,20 @@ form {
     gap: 1rem;
 }
 
+#shorttxt{
+    width: 200px;
+    height: 15px;
+}
+
 form input, form textarea {
-    width: 50%;
+    font: inherit;
+    color: #fff;
+    background-color: #0b253a;
+    width: 500px;
     padding: 0.8rem;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    resize: none;
+    border: 1px solid #5f7e97;
+    border-radius: 1px;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s ease;
 }
@@ -169,18 +177,23 @@ form input:focus, form textarea:focus {
     outline: none;
 }
 
+form input::placeholder, form textarea::placeholder{
+    color: #546675;
+  }
+  
 form button {
     width: 100px;
     height: 30px;
     color: #fff;
-    background-color: #1a8dcc;
+    background-color: #03648a;
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form button:hover {
+    background-color: #219fd5;
     transform: scale(1.05);
 }
 
