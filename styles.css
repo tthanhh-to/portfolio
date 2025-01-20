@@ -97,7 +97,7 @@ section {
 
 /* about me *
 /* profile photo */
-img {
+#aboutImage {
     float: inline-end;
     height: 225px;
     margin-right: 60px;
@@ -143,8 +143,10 @@ a:link {
 }
 
 .project img {
-    max-width: 100%;
-    height: auto;
+    height: 60%;
+    width: auto;
+    border-color: #fff;
+    border: 5px solid;
 }
 
 /* contact */
