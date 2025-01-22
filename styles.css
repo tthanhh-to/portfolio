@@ -210,13 +210,11 @@ button:hover {
 }
 
 /* resume */
-#pdf{
+
+#resume{
     text-align: center;
     padding-top: 1px;
-}
-
-#resbtn{
-    margin-left: 140px;
+    display: inline-block;
 }
 
 footer {
