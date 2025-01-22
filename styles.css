@@ -56,12 +56,20 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0rem;
 }
 
 nav a {
+    padding: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     color: #a7dbf7;
+}
+
+nav ul li a.active {
+    background-color: #0b2942;
+    color: #fff;
 }
 
 main {
@@ -74,7 +82,7 @@ main {
 /* each page setting */
 section {
     margin-top: 4%;
-    height: 90vh;
+    height: 100vh;
 }
 .page {
     position: absolute; /* Remove from document flow */
@@ -138,13 +146,15 @@ a:link {
 /* project section */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 1rem;
+    grid-auto-flow: column;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
 }
 
 .project img {
-    height: 60%;
-    width: auto;
+    height: 270px;
+    width: 475px;
     border-color: #fff;
     border: 5px solid;
 }
@@ -182,8 +192,8 @@ form input:focus, form textarea:focus {
 form input::placeholder, form textarea::placeholder{
     color: #546675;
   }
-  
-form button {
+
+button {
     width: 100px;
     height: 30px;
     color: #fff;
@@ -194,7 +204,7 @@ form button {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-form button:hover {
+button:hover {
     background-color: #219fd5;
     transform: scale(1.05);
 }
@@ -204,6 +214,11 @@ form button:hover {
     text-align: center;
     padding-top: 1px;
 }
+
+#resbtn{
+    margin-left: 140px;
+}
+
 footer {
     background-color: #219fd5;
     color: #fff;
