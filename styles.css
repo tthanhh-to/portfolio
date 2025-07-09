@@ -1,5 +1,8 @@
 html{
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
 }
@@ -34,7 +37,7 @@ body {
     font-family: "Space Mono";
     margin: 0;
     line-height: 1.8;
-    font-size: 15px;
+    font-size: 1.1vw;
     color: #a7dbf7;
 }
 
@@ -46,8 +49,8 @@ header {
     position: fixed;
     z-index: 9001;
 }
-
 nav ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -107,9 +110,9 @@ section {
 /* profile photo */
 #aboutImage {
     float: inline-end;
-    height: 225px;
+    height: 20%;
     margin-right: 60px;
-    width: 225px;
+    width: 20%;
     border-radius: 100%;
     border: 3px solid;
     border-color: #fff;
@@ -153,8 +156,8 @@ a:link {
 }
 
 .project img {
-    height: 270px;
-    width: 475px;
+    height: 75%;
+    width: 75%;
     border-color: #fff;
     border: 5px solid;
 }
@@ -217,6 +220,7 @@ button:hover {
 
 #resbtn{
     margin-left: 140px;
+    text-align: center;
 }
 
 footer {
